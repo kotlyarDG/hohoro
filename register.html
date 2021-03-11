@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+	<!-- Tittle -->
+	<title>Hohoro</title>
+
+	<!-- Кодировка -->
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+	<!-- Настройки вьюпорта для адекватного адаптива -->
+	<meta name="viewport" content="width=divice-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+	<!-- Подключение CSS файлов -->
+	<link rel="stylesheet" href="css/style.css" />
+
+</head>
+
+<body>
+	<!-- Внешняя оболочка -->
+	<div class="wrapper">
+		<div class="content">
+			<div class="head">
+				<img src="images/system_img/logo full.svg" alt="logo" class="head__logo">
+				<div class="head__dialog">
+					<p class="head__dialog-text">Не зарегистрирован? Не беда. Заполни необходимые данные для создания личного
+						кабинета.
+					</p>
+					<img src="images/system_img/bg-dialog.svg" alt="" class="head__dialog-bg">
+				</div>
+			</div>
+			<div class="body">
+				<form action="" class="form">
+					<div class="input-wrapper">
+						<label for="name" class="input-label">ФИО</label>
+						<input type="text" name="name" id="name" class="input" placeholder="Введите ФИО">
+					</div>
+					<div class="input-wrapper">
+						<label for="tel" class="input-label">Номер телефона</label>
+						<input type="tel" name="tel" id="tel" class="input" placeholder="Введите номер">
+					</div>
+					<p class="input-warning">Неверный формат номера телефона</p>
+					<div class="input-wrapper">
+						<label for="pass" class="input-label">Пароль</label>
+						<input type="password" name="pass" id="pass" class="input" placeholder="Введите пароль">
+					</div>
+					<div class="input-wrapper">
+						<label for="pass-again" class="input-label">Повторите пароль</label>
+						<input type="password" name="pass-again" id="pass-again" class="input" placeholder="Введите пароль">
+					</div>
+					<input type="checkbox" id="CheckId">
+					<label class="label-check" for="CheckId">Согласен на обработку <a href="">персональных данных</a></label>
+					<button type="submit" class="btn btn-green form-btn">Зарегистрироваться</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Подключение JS файлов -->
+	<!-- Jquery -->
+	<script src="js/jquery-3.5.0.min.js"></script>
+
+	<!-- Main script file -->
+	<script src="js/script.js"></script>
+</body>
+
+</html>
